@@ -1,0 +1,161 @@
+@font-face {
+  font-family: garamond;
+  src: url("../../fontes/EBGaramond-Regular.ttf");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: garamond;
+  src: url("../../fontes/EBGaramond-Italic.ttf");
+  font-style: italic;
+}
+
+body {
+  background-color: black;
+  font-family: garamond;
+  font-style: normal;
+  font-size: 30px;
+  padding: 0;
+  margin: 10vh;
+  overflow-x: hidden;
+}
+
+i {
+  font-style: italic;
+}
+
+section {
+  display: grid;
+  place-items: center;
+  align-content: center;
+  min-height: 100vh;
+}
+
+.imgs {
+  width: 600px;
+  height: 400px;
+}
+
+.imgs-vert {
+  width: 400px;
+  height: 600px;
+}
+
+.luz {
+  min-width: 10vh;
+}
+
+h1 {
+  color: aliceblue;
+  text-align: center;
+  padding-top: 400px;
+  font-size: 35px;
+  font-kerning: none;
+  letter-spacing: 0.3rem;
+}
+
+.incio {
+  letter-spacing: 0.1rem;
+}
+
+h3 {
+  color: aliceblue;
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+p {
+  color: aliceblue;
+  text-align: center;
+}
+
+.hide {
+  opacity: 0; /* elementos invisiveis*/
+  transform: translateY(20%);
+  filter: motionBlur(2px);
+}
+
+.show {
+  opacity: 1; /* volta a mostrar os elemntos*/
+  transform: translateY(0);
+  filter: motionBlur(0);
+  transition: all 3s; /* animação fade in*/
+}
+
+.leg:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.glow:hover {
+  color: #fff;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #ffff00,
+    0 0 60px #ffff00, 0 0 100px #ffff00;
+  cursor: pointer;
+  transition: 5s;
+}
+
+.kill {
+  font-weight: bold;
+  font-size: 30px;
+  color: red;
+}
+
+.imagem-texto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 75px;
+}
+
+.sala {
+  min-width: 40vh;
+  width: 10px;
+}
+
+.bebida {
+  color: darkgoldenrod;
+}
+
+/*audio:-webkit-media-controls-panel{
+  background-color: black;
+
+}*/
+
+audio::-webkit-progress-bar {
+  background-color: black;
+}
+
+.controls {
+  position: -webkit-fixed; /* Safari */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+}
+
+#scrollButton {
+  border: none;
+  border-radius: 10px;
+  padding: 15px 32px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  text-decoration-color: black;
+}
+
+#fullscreenButton {
+  border: none;
+  border-radius: 10px;
+  padding: 15px 32px;
+  margin-bottom: 10px;
+  margin-left: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  text-decoration-color: black;
+}
